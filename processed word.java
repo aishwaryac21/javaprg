@@ -1,10 +1,12 @@
 import java.util.Arrays;
+import java.util.Scanner;
 public class Strings
 {
 	public static void main(String[] args) 
 	{
-		String a="Today is a nice day";
-		int c=41;
+		Scanner s=new Scanner(System.in);
+		String a=s.nextLine();
+		int c=s.nextInt();
 		String s1="";
 		String s2="";
 		String  b[]=a.split(" ");
@@ -25,7 +27,7 @@ public class Strings
 			
 			t2=s1.substring(m);
 			StringBuffer sb=new StringBuffer(t1);
-			ans1+=sb.reverse().toString()+t2;
+			ans1=sb.reverse().toString()+t2;
 			
 		}
 		else
@@ -44,7 +46,7 @@ public class Strings
 			
 			t2=s2.substring(m);
 			StringBuffer sb=new StringBuffer(t1);
-			ans1+=sb.reverse().toString()+t2;
+			ans1=sb.reverse().toString()+t2;
 			
 		}
 		else
@@ -55,12 +57,13 @@ public class Strings
 			StringBuffer bs=new StringBuffer(v1);
 			ans2=bs.reverse().toString()+v2;
 		}
-		System.out.println(ans1+" "+ans2);
+		System.out.println(ans1+" "+ans1);
 		
 		
 	}
 
 }
+
 /*ip:Today is a nice day
      41
 op:ince doTday     
