@@ -35,8 +35,8 @@
 			return new Result(count,max1);
 	    }
 	}
-		}
-	}
+		
+	
 	/*i/p: ip1= 11,3,1,4,7,8,12,2,3,7(integer )
 	      ip2=10(length of array)
 	o/p: op1=2(no of decreasing sequence-{11,3,1},{12,2})
